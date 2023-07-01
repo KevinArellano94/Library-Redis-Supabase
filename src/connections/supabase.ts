@@ -3,8 +3,8 @@ import dotenv from 'dotenv';
 
 
 dotenv.config();
-let supabaseUrl = process.env.SUPABASE_URL;
-let supabaseApiKey = process.env.SUPABASE_API_KEY;
+let supabaseUrl :string = process.env.SUPABASE_URL;
+let supabaseApiKey :string = process.env.SUPABASE_API_KEY;
 
 export const supabaseClient: SupabaseClient = createSupabaseClient(
     supabaseUrl,

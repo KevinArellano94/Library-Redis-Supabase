@@ -15,11 +15,3 @@ export const redisClient = createRedisClient({
     port: redisPort,
   },
 });
-
-redisClient.on('error', (error) => {
-  console.error('Redis client error:', error);
-});
-
-redisClient.on('connect', () => {
-  console.log('Connected to Redis');
-});
